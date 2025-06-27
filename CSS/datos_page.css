@@ -18,16 +18,22 @@ body {
     padding-top: 56px; /* Altura de la navbar fija */
 }
 
-
-
-/* Navbar styles */
-.navbar {
-    background: rgba(45, 90, 39, 0.95); /* Color de fondo inicial con transparencia */
-    transition: background 0.4s ease; /* Transición suave para el cambio de fondo */
-    padding-top: 15px;
-    padding-bottom: 15px;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-green);
+    font-weight: 700;
 }
 
+a {
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+
+/* Navbar */
 .navbar-brand {
     font-weight: bold;
     font-size: 1.8rem;
@@ -65,7 +71,8 @@ body {
 
 /* Secciones Hero */
 .hero-section {
-    background: linear-gradient(rgba(45, 90, 39, 0.8), rgba(45, 90, 39, 0.8)), url('https://placehold.co/1920x800/4a7c3c/ffffff?text=Fondo+de+Naturaleza') no-repeat center center/cover;
+    background: rgba(45, 90, 39, 0.95);
+    transition: background 0.3s ease-in-out;
     color: var(--white);
     padding: 100px 0;
     min-height: 70vh; /* Altura mínima para que siempre ocupe la pantalla */
@@ -200,9 +207,28 @@ body {
     font-weight: bold;
 }
 
+/* Nuevo estilo para el fondo de los títulos del carrusel */
+.carousel-caption.bg-dark-overlay {
+    
+    padding: 10px 20px;
+    bottom: 20px; /* Ajustar posición */
+    left: 10%;
+    right: 10%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.carousel-caption h5 {
+    color: var(--black); /* Color de texto blanco para los títulos del carrusel */
+}
+.carousel-caption p {
+    color: var(--text-color); /* Color de texto blanco para los párrafos del carrusel */
+}
+
+
 /* Sección de Llamada a la Acción */
 .call-to-action-section {
-    background: rgba(45, 90, 39, 0.8) ;
+    background: rgba(45, 90, 39, 0.95);
+    transition: background 0.3s ease-in-out;
     color: var(--white);
     padding: 80px 0;
     text-align: center;
@@ -213,7 +239,7 @@ body {
 }
 
 .call-to-action-section p.lead {
-    color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.9);
 }
 
 /* Footer */
